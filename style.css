@@ -78,6 +78,7 @@ h3 {
   line-height: 1.12;
   letter-spacing: -0.035em;
   font-weight: 750;
+  text-wrap: balance;
 }
 p {
   margin: 0;
@@ -177,10 +178,6 @@ p {
   margin-top: 28px;
   font-size: clamp(1.07rem, 1.6vw, 1.2rem);
   color: var(--muted);
-}
-.sub {
-  margin-top: 19px;
-  font-weight: 680;
 }
 .btn {
   display: inline-flex;
