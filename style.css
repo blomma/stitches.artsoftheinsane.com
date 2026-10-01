@@ -8,7 +8,6 @@
   --faint: #7f8b8d;
   --red: #b73958;
   --red-dark: #8b2845;
-  --red-soft: #f5dce2;
   --line: #e6ddd0;
   --wrap: 1120px;
   --pad: clamp(20px, 5vw, 44px);
@@ -183,7 +182,7 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   min-height: 54px;
   margin-top: 29px;
   padding: 13px 23px;
@@ -202,10 +201,9 @@ p {
   color: white;
   background: var(--red-dark);
 }
-.btn-primary span {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 0;
+.btn-primary svg {
+  margin-top: -2px;
+  flex: none;
 }
 .availability {
   max-width: 45ch;
@@ -456,11 +454,6 @@ p {
   color: var(--muted);
   font-size: 18px;
 }
-.btn-secondary {
-  color: var(--red-dark);
-  background: var(--red-soft);
-  cursor: default;
-}
 .closer .availability {
   margin-inline: auto;
 }
@@ -607,6 +600,7 @@ p {
   }
   .btn-primary {
     width: 100%;
+    padding-inline: 16px;
   }
   .card {
     min-height: 0;
