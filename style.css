@@ -458,15 +458,17 @@ p {
   margin-inline: auto;
 }
 
-/* Policy and footer */
-.policy {
+/* Policy, support and footer */
+.policy,
+.support {
   max-width: min(100%, 850px);
   margin: 0 auto;
   padding: clamp(65px, 8vw, 95px) var(--pad);
   border-top: 1px solid var(--line);
   scroll-margin-top: 20px;
 }
-.policy h2 {
+.policy h2,
+.support h2 {
   font-size: clamp(1.8rem, 3vw, 2.45rem);
 }
 .policy h3 {
@@ -474,7 +476,8 @@ p {
   font-size: 18px;
   letter-spacing: -0.015em;
 }
-.policy p {
+.policy p,
+.support p {
   margin-top: 13px;
   color: var(--muted);
   font-size: 15.5px;
@@ -493,6 +496,9 @@ p {
   border-left: 4px solid var(--red);
   border-radius: 15px;
   font-size: 16px;
+}
+.support a {
+  overflow-wrap: anywhere;
 }
 .site-footer {
   border-top: 1px solid var(--line);
