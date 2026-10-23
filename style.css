@@ -165,6 +165,7 @@ p {
   font-weight: 780;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+  text-wrap: balance;
 }
 .hero h1 {
   max-width: 11ch;
@@ -293,6 +294,7 @@ p {
 
 /* Features */
 .features,
+.mac,
 .band,
 .closer {
   width: min(100%, var(--wrap));
@@ -344,6 +346,42 @@ p {
 }
 .feature-shot .phone {
   max-width: 284px;
+}
+
+/* Mac */
+.mac {
+  border-top: 1px solid var(--line);
+}
+.mac-shot {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.mac-shot img {
+  width: 100%;
+  filter: drop-shadow(0 0 0.5px #2b1d2066) drop-shadow(0 24px 34px #46353838);
+}
+.mac-points {
+  list-style: none;
+  padding: 0;
+  margin: clamp(44px, 6vw, 64px) 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.mac-points li {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 19px;
+  background: var(--paper);
+}
+.mac-points h3 {
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+.mac-points p {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 15.5px;
 }
 
 /* Detail and privacy bands */
@@ -577,7 +615,8 @@ p {
     max-width: 260px;
   }
   .cards,
-  .privacy-grid {
+  .privacy-grid,
+  .mac-points {
     grid-template-columns: 1fr;
   }
   .band-privacy {
