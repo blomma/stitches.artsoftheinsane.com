@@ -334,7 +334,7 @@ p {
   margin-top: 15px;
   font-size: clamp(1.8rem, 3.2vw, 2.65rem);
 }
-.feature-copy p:last-child {
+.feature-copy h3 ~ p {
   max-width: 50ch;
   margin-top: 20px;
   color: var(--muted);
@@ -608,7 +608,7 @@ p {
     order: 0;
   }
   .feature-copy h3,
-  .feature-copy p:last-child {
+  .feature-copy h3 ~ p {
     max-width: 100%;
   }
   .feature-shot .phone {
